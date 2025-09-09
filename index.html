@@ -8,37 +8,27 @@
 </head>
 <body>
     <h2>Gerenciar Produtos</h2>
+    <button id="btnAbrirCadastro">Cadastrar Produto</button>
 
-<button>Cadastrar Produto</button>
-
-<table border="1">
-    <tr>
-        <td>Nome</td>
-        <td>Preço</td>
-        <td>Quantidade</td>
-        <td>Valor Total</td>
-        <td>Ações</td>
-    </tr>
-
-</table>
-
-<h1>Gerenciar Produtos</h1>
-<button>Cadastrar Produto</button>
-
-<h1>Cadastro de Produto</h1>
- <p>Nome: <input type="" placeholder="Digite aqui..."></p>
- <p>Preço: <input type="" placeholder="Digite aqui..."></p>
-<p>Quantidade: <input type="" placeholder="Digite aqui..."> </p>
-
- <p><button>Salvar</button></p>
-<p><button>Cancelar</button></p>
-
-
-
-
-
-
-
+    <table border="1" id="tabelaProdutos">
+        <tr>
+            <td>Nome</td>
+            <td>Preço</td>
+            <td>Quantidade</td>
+            <td>Valor Total</td>
+            <td>Ações</td>
+        </tr>
+    </table>
+    <div id="cadastro" style="display:none;">
+        <h1>Cadastro de Produto</h1>
+        <p>Nome: <input type="text" id="inputNome" placeholder="Digite aqui..."></p>
+        <p>Preço: <input type="number" id="inputPreco" placeholder="Digite aqui..."></p>
+        <p>Quantidade: <input type="number" id="inputQtd" placeholder="Digite aqui..."> </p>
+        <p>
+            <button id="btnSalvar">Salvar</button>
+            <button id="btnCancelar">Cancelar</button>
+        </p>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
